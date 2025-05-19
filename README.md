@@ -80,6 +80,8 @@ Current Problems Solved
 
 ## Impact on Humanity and Companies
 
+![](Image_fx_b.jpg)
+
 This project has transformative potential for both societal good and commercial success in the pharmaceutical industry:
 Benefits for Humanity
 
