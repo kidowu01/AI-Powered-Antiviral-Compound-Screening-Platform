@@ -122,6 +122,16 @@ QSAR Model
 ![](QSAR_Model_Loss.PNG)
 _________________________________________________________________________________________________________________
 
+## Example Results
+The platform ranks compounds based on deep learning QSAR predictions and simulated docking scores, producing a prioritized list of potential SARS-CoV-2 Mpro inhibitors. Below is a sample output showing the top two candidates from the screening pipeline:
+
+| SMILES                              | DL Probability | Docking Score (kcal/mol) | Composite Score |
+|-------------------------------------|----------------|-------------------------|-----------------|
+| CCN(CC)CCOC(=O)C1=CC=CC=C1Cl        | 0.9976         | -9.2523                 | 9.2303          |
+| CC(C)NCC(O)COC1=CC=CC=C1            | 0.2747         | -6.2899                 | 1.7279          |
+
+**Explanation**: The table lists compounds by SMILES, their predicted bioactivity (DL Probability, 0 to 1), binding affinity (Docking Score, lower is better), and a composite score (DL Probability × -Docking Score). Higher composite scores indicate top candidates for experimental validation.
+
 ## Technologies Used
 
 **•	Cheminformatics:** RDKit
